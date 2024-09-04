@@ -1,10 +1,10 @@
-const express = require("express"); // Import express
-const { createServer } = require("http"); // Import http
-const { Server } = require("socket.io"); // Import socket.io
+const express = require("express"); 
+const { createServer } = require("http"); 
+const { Server } = require("socket.io"); 
 const Redis = require('ioredis');
 const bodyParser = require('body-parser');
 
-const app = express(); // Create express app
+const app = express(); 
 app.use(bodyParser.json());
 const httpServer = createServer(app); // Create http server using express app
 
